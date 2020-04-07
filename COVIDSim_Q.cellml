@@ -23,13 +23,13 @@
         <!-- Infectious, untested-->
         <variable initial_value="0" name="I_u" units="dimensionless"/>
         <!-- Infectious, tested-->
-        <variable initial_value="0" name="I_t" units="dimensionless"/>
+        <variable initial_value="0" name="I_c" units="dimensionless"/>
         <!-- Infectious, total-->
         <variable name="I" units="dimensionless"/>
         <!-- Recovered, untested-->
         <variable initial_value="0" name="R_u" units="dimensionless"/>
         <!-- Recovered, tested-->
-        <variable initial_value="0" name="R_t" units="dimensionless"/>
+        <variable initial_value="0" name="R_c" units="dimensionless"/>
         <!-- Recovered from Quarantined-->
         <variable initial_value="0" name="R_q" units="dimensionless"/>
         <!-- Recovered, total-->
@@ -95,7 +95,7 @@
                             <ci>I_p</ci>
                         </apply>
                         <ci>I_u</ci>
-                        <ci>I_t</ci>
+                        <ci>I_c</ci>
                     </apply>
                 </apply>
             </apply>
@@ -124,7 +124,7 @@
                                     <ci>I_p</ci>
                                 </apply>
                                 <ci>I_u</ci>
-                                <ci>I_t</ci>
+                                <ci>I_c</ci>
                             </apply>
                         </apply>
                         <apply>
@@ -235,7 +235,7 @@
                     <bvar>
                         <ci>t</ci>
                     </bvar>
-                    <ci>I_t</ci>
+                    <ci>I_c</ci>
                 </apply>
                 <apply>
                     <minus/>
@@ -247,7 +247,7 @@
                     <apply>
                         <times/>
                         <ci>gamma</ci>
-                        <ci>I_t</ci>
+                        <ci>I_c</ci>
                     </apply>
                 </apply>
             </apply>
@@ -278,7 +278,7 @@
                     <bvar>
                         <ci>t</ci>
                     </bvar>
-                    <ci>R_t</ci>
+                    <ci>R_c</ci>
                 </apply>
                 <apply>
                     <times/>
@@ -288,7 +288,7 @@
                         <cn cellml:units="dimensionless">1</cn>
                         <ci>IFR</ci>
                     </apply>
-                    <ci>I_t</ci>
+                    <ci>I_c</ci>
                 </apply>
             </apply>
             <apply>
@@ -321,11 +321,11 @@
                                         </apply>
                                         <ci>I_u</ci>
                                     </apply>
-                                    <ci>I_t</ci>
+                                    <ci>I_c</ci>
                                 </apply>
                                 <ci>R_u</ci>
                             </apply>
-                            <ci>R_t</ci>
+                            <ci>R_c</ci>
                         </apply>
                         <ci>R_q</ci>
                     </apply>
@@ -337,7 +337,7 @@
                 <ci>I</ci>
                 <apply>
                     <plus/>
-                    <ci>I_t</ci>
+                    <ci>I_c</ci>
                     <ci>I_u</ci>
                     <ci>I_p</ci>
                 </apply>
@@ -347,7 +347,7 @@
                 <ci>R</ci>
                 <apply>
                     <plus/>
-                    <ci>R_t</ci>
+                    <ci>R_c</ci>
                     <ci>R_u</ci>
                     <ci>R_q</ci>
                 </apply>

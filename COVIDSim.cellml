@@ -17,17 +17,17 @@
         <!-- Exposed-->
         <variable initial_value="0.000004" name="E" units="dimensionless"/>
         <!-- Pre-Symptomatic-->
-        <variable initial_value="0" name="P" units="dimensionless"/>
+        <variable initial_value="0" name="I_p" units="dimensionless"/>
         <!-- Infectious, untested-->
         <variable initial_value="0" name="I_u" units="dimensionless"/>
         <!-- Infectious, tested-->
-        <variable initial_value="0" name="I_t" units="dimensionless"/>
+        <variable initial_value="0" name="I_c" units="dimensionless"/>
         <!-- Infectious, total-->
         <variable name="I" units="dimensionless"/>
         <!-- Recovered, untested-->
         <variable initial_value="0" name="R_u" units="dimensionless"/>
         <!-- Recovered, tested-->
-        <variable initial_value="0" name="R_t" units="dimensionless"/>
+        <variable initial_value="0" name="R_c" units="dimensionless"/>
         <!-- Recovered, total-->
         <variable name="R" units="dimensionless"/>
         <!-- Deaths-->
@@ -84,10 +84,10 @@
                         <apply>
                             <times/>
                             <ci>epsilon</ci>
-                            <ci>P</ci>
+                            <ci>I_p</ci>
                         </apply>
                         <ci>I_u</ci>
-                        <ci>I_t</ci>
+                        <ci>I_c</ci>
                     </apply>
                 </apply>
             </apply>
@@ -111,10 +111,10 @@
                             <apply>
                                 <times/>
                                 <ci>epsilon</ci>
-                                <ci>P</ci>
+                                <ci>I_p</ci>
                             </apply>
                             <ci>I_u</ci>
-                            <ci>I_t</ci>
+                            <ci>I_c</ci>
                         </apply>
                     </apply>
                     <apply>
@@ -131,7 +131,7 @@
                     <bvar>
                         <ci>t</ci>
                     </bvar>
-                    <ci>P</ci>
+                    <ci>I_p</ci>
                 </apply>
                 <apply>
                     <minus/>
@@ -143,7 +143,7 @@
                     <apply>
                         <times/>
                         <ci>delta</ci>
-                        <ci>P</ci>
+                        <ci>I_p</ci>
                     </apply>
                 </apply>
             </apply>
@@ -161,7 +161,7 @@
                     <apply>
                         <times/>
                         <ci>delta</ci>
-                        <ci>P</ci>
+                        <ci>I_p</ci>
                     </apply>
                     <apply>
                         <times/>
@@ -181,7 +181,7 @@
                     <bvar>
                         <ci>t</ci>
                     </bvar>
-                    <ci>I_t</ci>
+                    <ci>I_c</ci>
                 </apply>
                 <apply>
                     <minus/>
@@ -193,7 +193,7 @@
                     <apply>
                         <times/>
                         <ci>gamma</ci>
-                        <ci>I_t</ci>
+                        <ci>I_c</ci>
                     </apply>
                 </apply>
             </apply>
@@ -224,7 +224,7 @@
                     <bvar>
                         <ci>t</ci>
                     </bvar>
-                    <ci>R_t</ci>
+                    <ci>R_c</ci>
                 </apply>
                 <apply>
                     <times/>
@@ -234,7 +234,7 @@
                         <cn cellml:units="dimensionless">1</cn>
                         <ci>IFR</ci>
                     </apply>
-                    <ci>I_t</ci>
+                    <ci>I_c</ci>
                 </apply>
             </apply>
             <apply>
@@ -259,15 +259,15 @@
                                         </apply>
                                         <ci>E</ci>
                                     </apply>
-                                    <ci>P</ci>
+                                    <ci>I_p</ci>
                                 </apply>
                                 <ci>I_u</ci>
                             </apply>
-                            <ci>I_t</ci>
+                            <ci>I_c</ci>
                         </apply>
                         <ci>R_u</ci>
                     </apply>
-                    <ci>R_t</ci>
+                    <ci>R_c</ci>
                 </apply>
             </apply>
             <apply>
@@ -275,7 +275,7 @@
                 <ci>I</ci>
                 <apply>
                     <plus/>
-                    <ci>I_t</ci>
+                    <ci>I_c</ci>
                     <ci>I_u</ci>
                 </apply>
             </apply>
@@ -284,7 +284,7 @@
                 <ci>R</ci>
                 <apply>
                     <plus/>
-                    <ci>R_t</ci>
+                    <ci>R_c</ci>
                     <ci>R_u</ci>
                 </apply>
             </apply>

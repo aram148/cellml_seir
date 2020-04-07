@@ -78,7 +78,7 @@
         </dataGenerator>
         <dataGenerator id="yDataGenerator1_3">
             <listOfVariables>
-                <variable id="yVariable1_3" target="/cellml:model/cellml:component[@name='main']/cellml:variable[@name='P']" taskReference="repeatedTask"/>
+                <variable id="yVariable1_3" target="/cellml:model/cellml:component[@name='main']/cellml:variable[@name='I_p']" taskReference="repeatedTask"/>
             </listOfVariables>
             <math xmlns="http://www.w3.org/1998/Math/MathML">
                 <ci> yVariable1_3 </ci>
@@ -158,7 +158,7 @@
         </dataGenerator>
         <dataGenerator id="yDataGenerator2_2">
             <listOfVariables>
-                <variable id="yVariable2_2" target="/cellml:model/cellml:component[@name='main']/cellml:variable[@name='I_t']" taskReference="repeatedTask"/>
+                <variable id="yVariable2_2" target="/cellml:model/cellml:component[@name='main']/cellml:variable[@name='I_c']" taskReference="repeatedTask"/>
             </listOfVariables>
             <math xmlns="http://www.w3.org/1998/Math/MathML">
                 <ci> yVariable2_2 </ci>
@@ -206,7 +206,7 @@
         </dataGenerator>
         <dataGenerator id="yDataGenerator3_2">
             <listOfVariables>
-                <variable id="yVariable3_2" target="/cellml:model/cellml:component[@name='main']/cellml:variable[@name='R_t']" taskReference="repeatedTask"/>
+                <variable id="yVariable3_2" target="/cellml:model/cellml:component[@name='main']/cellml:variable[@name='R_c']" taskReference="repeatedTask"/>
             </listOfVariables>
             <math xmlns="http://www.w3.org/1998/Math/MathML">
                 <ci> yVariable3_2 </ci>
